@@ -7,9 +7,12 @@ class Solution {
         int longest = 1;
         int cnt = 1;
         for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == nums[i - 1]) continue;
-            if (nums[i] == nums[i - 1] + 1) cnt++;
-            else {
+            if (nums[i] == nums[i - 1]) {
+                continue;
+            }
+            if (nums[i] == nums[i - 1] + 1) {
+                cnt++;
+            } else {
                 longest = Math.max(longest, cnt);
                 cnt = 1;
             }
