@@ -3,7 +3,7 @@ public:
     bool reportSpam(vector<string>& message, vector<string>& bannedWords) {
         int n = message.size();
         int k = bannedWords.size();
-        set<string> banned;
+        unordered_set<string> banned;
         for(int i = 0; i < k; i++) {
             banned.insert(bannedWords[i]);
         }
