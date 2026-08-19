@@ -3,10 +3,10 @@ public:
     int maxValidPairSum(vector<int>& nums, int k) {
         int n=nums.size();
         int maxi=INT_MIN;
-        int best=INT_MIN;
+        int maxiii=INT_MIN;
         for(int j=k;j<n;j++){
-            best=max(best,nums[j-k]);
-            maxi=max(maxi,best+nums[j]);
+            maxiii=max(maxiii,nums[j-k]);
+            maxi=max(maxi,maxiii+nums[j]);
         }
         return maxi;
     }
