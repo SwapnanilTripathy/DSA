@@ -8,6 +8,6 @@ public:
             if(s[i]=='a') cta++;
             else ctb++;
         }
-    return (n-(2*min(cta,ctb)));   
+    return abs(cta-ctb);   
     }
 };
